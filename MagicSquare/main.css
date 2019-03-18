@@ -103,7 +103,7 @@ body #game #board .row > div.result {
      content: attr(actual);
      position: absolute;
      top:50%;
-     left:50%;
+     left:50%;  
      transform:translate(-50%,-20%);
      font-size:18px;
      opacity:0.8;
@@ -204,4 +204,9 @@ body #winner #close {
 }
 body #winner:not(.show) {
   display: none;
+}
+
+h1{
+  text-align: center;
+  
 }
