@@ -1,6 +1,13 @@
 body {
   margin: 20px;
+  background-color: #080f1c;
+  color: white;
+}
 
+h1{
+	text-align: center;
+	margin-bottom: 2em;
+	margin-top: 1em;
 }
 
 .grid {
@@ -15,13 +22,14 @@ body {
   display: flex;
 }
 .box {
-  background: blue;
+  background: #0c316d;
   margin: 5px;
   color: white;
   font-weight: bold;
   flex: 1 0 auto;
   position: relative;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 5px;
 
 }
 .box:after {
@@ -54,7 +62,7 @@ body {
   text-align: center;
 }
 .box:active {
-    color:red;
+    color:#a50404;
     box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
 }
 .box:hover span {
@@ -67,7 +75,7 @@ body {
 }
 
 input{
-	background-color: blue;
+	background-color: #0c316d;
 	border: none;
 	width: 90%;
 	color: white;
