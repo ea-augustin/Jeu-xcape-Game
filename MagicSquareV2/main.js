@@ -58,3 +58,14 @@ $('#inp5').on('input',function test(){
 	else $('.resultDiag').attr("style",'color:red');
 });
 
+
+function win(){
+
+};
+
+/*
+$('#close').onclick = function(){
+	$('#end').css({'visibility':'hidden'});
+};*/
+
+

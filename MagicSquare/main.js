@@ -237,7 +237,7 @@ $(document).on(Capture, "#keyboard .key", function(){
       Previous = -1;
    }
    $("#game").attr("cursor", Previous);
-})
+});
 $(document).on(Capture, "#close", function() {
    $("#winner").removeClass("show");
 });
