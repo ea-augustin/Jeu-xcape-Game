@@ -63,9 +63,10 @@ function win(){
 
 };
 
+var bleep = new Audio();
+bleep.src = "./audio/Click2.wav";
+
 /*
 $('#close').onclick = function(){
 	$('#end').css({'visibility':'hidden'});
 };*/
-
-
