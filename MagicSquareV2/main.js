@@ -36,7 +36,6 @@ $('#instructions').click(function(){
 });
 
 $('#reset').click(function(){
-	$('body').fadeOut('slow');
 	location.reload();
 });
 
