@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="../jquery.js"></script>
+    <link rel="icon" href="img/logoTSE.png">
     <title>Carré magique</title>
-    <link rel="icon" href="img/logoTSE.png" />
+    <script type="text/javascript" src="../jquery.js"></script>
 </head>
 <body>
     <header>
         <img src="img/logoTSE.png" alt="logoTSE">
         <h1>Carré magique</h1>
-    </header> 
+        <button type="button" id="instructions">Instructions</button>
+    </header>
+    <div id="divReset"> 
+        <button id="reset">Recommencer ?</button><br><br><br><br>
+    </div>
     <div id="main">
         <div id="instr">
             <p>
@@ -25,9 +26,9 @@
                     Voici un carré avec des nombres.
                     Le carré est magique si les sommes des nombres sont égales sur:
                     <ul>
-                        <li>les lignes,</li>
-                        <li>les colonnes, </li>
-                        <li>et les diagonales.</li>
+                        <li>Les lignes.</li>
+                        <li>Les colonnes.</li>
+                        <li>Les diagonales.</li>
                     </ul>
                     Ainsi, on doit trouver 11 sommes dans le carré, dont les valeurs sont égales à 65.
                 </ul>
@@ -40,7 +41,7 @@
                 <div class="box"><div class="inner"><input type="text" id='c3l1' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c4l1' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c5l1' autocomplete="off"></div></div>
-                <p id='resultRow1'>65</p>
+                <p class='result'>65</p>
             </div>
             <div class="row">
                 <div class="box"><div class="inner"><input type="text" id='c1l2' readonly="readonly" value="19" autocomplete="off"></div></div>
@@ -48,7 +49,7 @@
                 <div class="box"><div class="inner"><input type="text" id='c3l2' readonly="readonly" value="25" autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c4l2' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c5l2' readonly="readonly" value="1" autocomplete="off"></div></div>
-                <p id='resultRow2'>65</p>
+                <p class='result'>65</p>
             </div>
             <div class="row">
                 <div class="box"><div class="inner"><input type="text" id='c1l3' autocomplete="off"></div></div>
@@ -56,7 +57,7 @@
                 <div class="box"><div class="inner"><input type="text" name="c1" id='c3l3' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c4l3' readonly="readonly" value="9" autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c5l3' autocomplete="off"></div></div>
-                <p id='resultRow3'>65</p>
+                <p class='result'>65</p>
             </div>
             <div class="row">
                 <div class="box"><div class="inner"><input type="text" id='c1l4' readonly="readonly" value="6" autocomplete="off"></div></div>
@@ -64,7 +65,7 @@
                 <div class="box"><div class="inner"><input type="text" id='c3l4' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" name="c1" id='c4l4' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c5l4' readonly="readonly" value="18" autocomplete="off"></div></div>
-                <p id='resultRow4'>65</p>
+                <p class='result'>65</p>
             </div>
             <div class="row">
                 <div class="box"><div class="inner"><input type="text" id='c1l5' autocomplete="off"></div></div>
@@ -72,21 +73,21 @@
                 <div class="box"><div class="inner"><input type="text" id='c3l5' autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" id='c4l5' readonly="readonly" value="21" autocomplete="off"></div></div>
                 <div class="box"><div class="inner"><input type="text" name="c1" id='c5l5' autocomplete="off"></div></div>
-                <p id='resultRow5'>65</p>
+                <p class='result'>65</p>
             </div>
             <div class="row">
-                <p id='resultCol1'>65</p>
-                <p id='resultCol2'>65</p>
-                <p id='resultCol3'>65</p>
-                <p id='resultCol4'>65</p>
-                <p id='resultCol5'>65</p>
-                <p id='resultDiag'>65</p>
+                <p class='result'>65</p>
+                <p class='result'>65</p>
+                <p class='result'>65</p>
+                <p class='result'>65</p>
+                <p class='result'>65</p>
+                <p class='result'>65</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <img class='logoFooter' src="img/banniereTSE.png">
+        <img class="logoFooter" src="img/banniereTSE.png">
         <img class="logoFooter" src="img/logoFormation.png">
     </footer>
 
