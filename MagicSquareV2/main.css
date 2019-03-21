@@ -34,7 +34,7 @@ h1{
 }
 .box:after {
   content: "";
-  float:left;q
+  float:left;
   display: block;
   padding-top: 100%;
 }
@@ -88,8 +88,10 @@ p{
 	margin-top: 1em;
 	text-align: center;
 	flex: 1 0 auto;
-  	position: relative;
-  	font-weight: bold;
+  position: relative;
+  font-weight: bold;
+  visibility: hidden;
+  color: green;
 }
 
 #win{

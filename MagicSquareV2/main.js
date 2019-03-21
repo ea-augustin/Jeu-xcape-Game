@@ -1,72 +1,33 @@
-$('#inp1').on('input',function test(){
-	let sum = 65;
-	let exi = 42;
-	let inp = $('#inp1').val();
-
-	if((sum - exi) == inp) $('.resultRow1').attr("style",'color:green');
-	else $('.resultRow1').attr("style",'color:red');
-
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
-	else $('.resultRow6').attr("style",'color:red');
-});
-
-$('#inp2').on('input',function test(){
-	let sum = 65;
-	let exi = 58;
-	let inp = $('#inp2').val();
-
-	if((sum - exi) == inp) $('.resultRow2').attr("style",'color:green');
-	else $('.resultRow2').attr("style",'color:red');
-
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
-	else $('.resultRow6').attr("style",'color:red');
-});
-
-$('#inp3').on('input',function test(){
-	let sum = 65;
-	let exi = 49;
-	let inp = $('#inp3').val();
-
-	if((sum - exi) == inp) $('.resultRow3').attr("style",'color:green');
-	else $('.resultRow3').attr("style",'color:red');
-
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
-	else $('.resultRow6').attr("style",'color:red');
-});
-
-$('#inp4').on('input',function test(){
-	let sum = 65;
-	let exi = 60;
-	let inp = $('#inp4').val();
-
-	if((sum - exi) == inp) $('.resultRow4').attr("style",'color:green');
-	else $('.resultRow4').attr("style",'color:red');
-
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
-	else $('.resultRow6').attr("style",'color:red');
-});
-
-$('#inp5').on('input',function test(){
-	let sum = 65;
-	let exi = 51;
-	let inp = $('#inp5').val();
-
-	if((sum - exi) == inp) $('.resultRow5').attr("style",'color:green');
-	else $('.resultRow5').attr("style",'color:red');
-
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
-	else $('.resultRow6').attr("style",'color:red');
-});
-
-
-function win(){
-
-};
-
 var bleep = new Audio();
 bleep.src = "./audio/Click2.wav";
 
+var sum = 65;
 
 $('.box').mouseover(function(){
 	bleep.play();
 });
+
+$('input').on('input',function(){
+	let inp = this.id;
+	let idCol = parseInt(inp.substring(1,2));
+	let idRow = parseInt(inp.substring(3,4));
+
+	let result = (parseInt($('#c1l1').val()) + parseInt($('#c2l2').val()) + parseInt($('#c3l3').val()) + parseInt($('#c4l4').val()) + parseInt($('#c5l5').val()));
+
+	if(result == 65) $('#resultDiag').attr("style",'visibility:visible');
+
+	verifRow(idRow);
+	verifCol(idCol);
+});
+
+function verifRow(id){
+	let result = (parseInt($('#c1'+'l'+id).val()) + parseInt($('#c2'+'l'+id).val()) + parseInt($('#c3'+'l'+id).val()) + parseInt($('#c4'+'l'+id).val()) + parseInt($('#c5'+'l'+id).val()));
+
+	if(result == 65) $('#resultRow'+id).attr("style",'visibility:visible');
+};
+
+function verifCol(id){
+	let result = (parseInt($('#c'+ id + 'l1').val()) + parseInt($('#c'+ id + 'l2').val()) + parseInt($('#c'+ id + 'l3').val()) + parseInt($('#c'+ id + 'l4').val()) + parseInt($('#c'+ id + 'l5').val()));
+
+	if(result == 65) $('#resultCol'+id).attr("style",'visibility:visible');
+};
