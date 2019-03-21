@@ -6,8 +6,8 @@ $('#inp1').on('input',function test(){
 	if((sum - exi) == inp) $('.resultRow1').attr("style",'color:green');
 	else $('.resultRow1').attr("style",'color:red');
 
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultDiag').attr("style",'color:green');
-	else $('.resultDiag').attr("style",'color:red');
+	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
+	else $('.resultRow6').attr("style",'color:red');
 });
 
 $('#inp2').on('input',function test(){
@@ -18,8 +18,8 @@ $('#inp2').on('input',function test(){
 	if((sum - exi) == inp) $('.resultRow2').attr("style",'color:green');
 	else $('.resultRow2').attr("style",'color:red');
 
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultDiag').attr("style",'color:green');
-	else $('.resultDiag').attr("style",'color:red');
+	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
+	else $('.resultRow6').attr("style",'color:red');
 });
 
 $('#inp3').on('input',function test(){
@@ -30,8 +30,8 @@ $('#inp3').on('input',function test(){
 	if((sum - exi) == inp) $('.resultRow3').attr("style",'color:green');
 	else $('.resultRow3').attr("style",'color:red');
 
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultDiag').attr("style",'color:green');
-	else $('.resultDiag').attr("style",'color:red');
+	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
+	else $('.resultRow6').attr("style",'color:red');
 });
 
 $('#inp4').on('input',function test(){
@@ -42,8 +42,8 @@ $('#inp4').on('input',function test(){
 	if((sum - exi) == inp) $('.resultRow4').attr("style",'color:green');
 	else $('.resultRow4').attr("style",'color:red');
 
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultDiag').attr("style",'color:green');
-	else $('.resultDiag').attr("style",'color:red');
+	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
+	else $('.resultRow6').attr("style",'color:red');
 });
 
 $('#inp5').on('input',function test(){
@@ -54,8 +54,8 @@ $('#inp5').on('input',function test(){
 	if((sum - exi) == inp) $('.resultRow5').attr("style",'color:green');
 	else $('.resultRow5').attr("style",'color:red');
 
-	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultDiag').attr("style",'color:green');
-	else $('.resultDiag').attr("style",'color:red');
+	if((parseInt($('#inp1').val()) + parseInt($('#inp2').val()) + parseInt($('#inp3').val()) + parseInt($('#inp4').val()) + parseInt($('#inp5').val())) == 65) $('.resultRow6').attr("style",'color:green');
+	else $('.resultRow6').attr("style",'color:red');
 });
 
 
@@ -66,7 +66,7 @@ function win(){
 var bleep = new Audio();
 bleep.src = "./audio/Click2.wav";
 
-/*
-$('#close').onclick = function(){
-	$('#end').css({'visibility':'hidden'});
-};*/
+
+$('.box').mouseover(function(){
+	bleep.play();
+});
