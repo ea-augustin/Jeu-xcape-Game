@@ -13,13 +13,14 @@ h1{
 }
 
 .grid {
-  margin: 0 auto;
+  margin: auto;
   width: 80vw;
   max-width: 60vh;
   height: 80vw;
   max-height: 60vh;
   font-size: 1rem;
 }
+
 .row {
   display: flex;
 }
@@ -145,8 +146,6 @@ footer{
   height: 160px;
 }
 
-
-
 #instructions{
   padding: 1em;
   border-radius: 5px;
@@ -169,4 +168,6 @@ footer{
 
 #divReset{
  text-align: center;
+ margin-bottom: 4em;
+ margin-right: 4em;
 }

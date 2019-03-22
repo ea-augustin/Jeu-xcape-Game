@@ -10,15 +10,19 @@
     <script type="text/javascript" src="../jquery.js"></script>
 </head>
 <body>
+    <!-- Partie header, constituée du logo TSE, du titre et d'un bouton qui affiche les instructions -->
     <header>
         <img src="img/logoTSE.png" alt="logoTSE">
         <h1>Carré magique</h1>
         <button type="button" id="instructions">Instructions</button>
     </header>
+    <!-- Bouton pour recommencer le jeu -->
     <div id="divReset"> 
-        <button id="reset">Recommencer ?</button><br><br><br><br>
+        <button id="reset">Recommencer ?</button><br>
     </div>
+    <!-- Partie principale de la page -->
     <div id="main">
+        <!-- Instructions (masquées avant d'avoir cliqué sur le bouton du header) -->
         <div id="instr">
             <p>
                 <h3>Instructions</h3>
@@ -30,10 +34,11 @@
                         <li>Les colonnes.</li>
                         <li>Les diagonales.</li>
                     </ul>
-                    Ainsi, on doit trouver 11 sommes dans le carré, dont les valeurs sont égales à 65.
+                    Ainsi, les sommes dans le carré ont des valeurs égales à 65, sachant qu'on ne peut entrer un nombre qu'une seule fois et que les nombres vont de 1 à 25.
                 </ul>
             </p>
         </div>
+        <!-- Partie du carré magique -->
         <div class="grid">
             <div class="row">
                 <div class="box"><div class="inner"><input type="text" id='c1l1' autocomplete="off"></div></div>
@@ -86,13 +91,13 @@
         </div>
     </div>
 
+    <!-- Partie footer, composée des logos TSE et DTA -->
     <footer>
         <img class="logoFooter" src="img/banniereTSE.png">
         <img class="logoFooter" src="img/logoFormation.png">
     </footer>
 
-   <!-- Optional JavaScript -->
-   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!-- Lien vers Scripts JavaScript -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    <script type="text/javascript" src="main.js"></script>
